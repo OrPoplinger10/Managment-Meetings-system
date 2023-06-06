@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "e8ab3f9c-3c8d-4789-bf0e-fda2998f8525",
+		"name": "Managment Meetings REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all development groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/development-groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"development-groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add meeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"developmentGroupId\": 3,\r\n        \"startMeeting\": \"2023-07-08T13:30:00.000Z\",\r\n        \"endMeeting\": \"2023-07-08T15:30:00.000Z\",\r\n        \"meetingDescription\": \"Meeting to develop a new project\",\r\n        \"meetingRoom\": \"Red Room\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/add-meeting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"add-meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get meeting by development groups Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"developmentGroupId\": 3,\r\n        \"startMeeting\": \"2023-07-08T13:30:00.000Z\",\r\n        \"endMeeting\": \"2023-07-08T15:30:00.000Z\",\r\n        \"meetingDescription\": \"Meeting to develop a new project\",\r\n        \"meetingRoom\": \"Red Room\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/meetings-by-development-groups/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"meetings-by-development-groups",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
