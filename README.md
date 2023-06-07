@@ -5,4 +5,4 @@ Languages I used:
 
 Server side - Node.js, Client side - React, Typescript. 
 
-data base : phpMyAdmin.
+database : phpMyAdmin.
