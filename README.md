@@ -3,4 +3,6 @@ In this system it is possible to conduct meetings on various topics with an exac
 
 Languages I used:
 
-Server side - Node.js, Client side - React, Typescript. data base : phpMyAdmin
+Server side - Node.js, Client side - React, Typescript. 
+
+data base : phpMyAdmin
